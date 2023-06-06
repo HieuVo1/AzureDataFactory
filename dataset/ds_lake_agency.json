@@ -2,7 +2,7 @@
 	"name": "ds_lake_agency",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "nycpayrollrDataLakeGen2",
+			"referenceName": "ls_data_lake",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
