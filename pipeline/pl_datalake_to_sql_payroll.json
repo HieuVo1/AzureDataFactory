@@ -1,5 +1,5 @@
 {
-	"name": "pipeline1",
+	"name": "pl_datalake_to_sql_payroll",
 	"properties": {
 		"activities": [
 			{
@@ -16,7 +16,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"dataflow": {
-						"referenceName": "dataflow1",
+						"referenceName": "df_datalake_to_sql_payroll",
 						"type": "DataFlowReference"
 					},
 					"compute": {

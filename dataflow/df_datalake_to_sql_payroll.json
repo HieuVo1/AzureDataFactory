@@ -1,5 +1,5 @@
 {
-	"name": "dataflow1",
+	"name": "df_datalake_to_sql_payroll",
 	"properties": {
 		"type": "MappingDataFlow",
 		"typeProperties": {
@@ -15,7 +15,7 @@
 			"sinks": [
 				{
 					"dataset": {
-						"referenceName": "ds_sqldb_nycpayroll",
+						"referenceName": "ds_sql_payroll",
 						"type": "DatasetReference"
 					},
 					"name": "sinkssqlpayroll"
@@ -74,6 +74,7 @@
 				"     insertable:true,",
 				"     updateable:false,",
 				"     upsertable:false,",
+				"     truncate:true,",
 				"     format: 'table',",
 				"     skipDuplicateMapInputs: true,",
 				"     skipDuplicateMapOutputs: true,",
