@@ -239,7 +239,7 @@
 								"datasetParameters": {
 									"sqlnycpayroll": {},
 									"lakepayrollhistory": {},
-									"sink1": {}
+									"sinksynapsepayrollsummary": {}
 								}
 							},
 							"staging": {

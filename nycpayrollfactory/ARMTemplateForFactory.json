@@ -266,7 +266,7 @@
 								"datasetParameters": {
 									"sqlnycpayroll": {},
 									"lakepayrollhistory": {},
-									"sink1": {}
+									"sinksynapsepayrollsummary": {}
 								}
 							},
 							"staging": {
@@ -1381,7 +1381,7 @@
 								"referenceName": "ds_synapse_payroll_summary",
 								"type": "DatasetReference"
 							},
-							"name": "sink1"
+							"name": "sinksynapsepayrollsummary"
 						}
 					],
 					"transformations": [
@@ -1468,17 +1468,12 @@
 						"     insertable:true,",
 						"     updateable:false,",
 						"     upsertable:false,",
-						"     truncate:true,",
 						"     format: 'table',",
 						"     staged: true,",
+						"     allowCopyCommand: true,",
 						"     skipDuplicateMapInputs: true,",
 						"     skipDuplicateMapOutputs: true,",
-						"     errorHandlingOption: 'stopOnFirstError',",
-						"     mapColumn(",
-						"          FiscalYear,",
-						"          AgencyName,",
-						"          TotalPaid",
-						"     )) ~> sink1"
+						"     errorHandlingOption: 'stopOnFirstError') ~> sinksynapsepayrollsummary"
 					]
 				}
 			},
