@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Pipeline 2",
+				"name": "PipeLine Payroll Summary To Synapse",
 				"type": "ExecuteDataFlow",
 				"dependsOn": [],
 				"policy": {
