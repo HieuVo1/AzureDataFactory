@@ -218,7 +218,7 @@
 			"properties": {
 				"activities": [
 					{
-						"name": "PipeLine Payroll Summary To Synapse",
+						"name": "Payroll Summary",
 						"type": "ExecuteDataFlow",
 						"dependsOn": [],
 						"policy": {
@@ -261,8 +261,7 @@
 					"elapsedTimeMetric": {},
 					"cancelAfter": {}
 				},
-				"annotations": [],
-				"lastPublishTime": "2023-06-06T12:02:36Z"
+				"annotations": []
 			},
 			"dependsOn": []
 		},
