@@ -1,5 +1,5 @@
 {
-	"name": "pipeline2",
+	"name": "pl_lake_sql_to_synapse_payroll_summary",
 	"properties": {
 		"activities": [
 			{
@@ -16,7 +16,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"dataflow": {
-						"referenceName": "dataflow2",
+						"referenceName": "df_lake_sql_to_synapse_payroll_summary",
 						"type": "DataFlowReference",
 						"parameters": {
 							"dataflow_param_fiscalyear": "2020"

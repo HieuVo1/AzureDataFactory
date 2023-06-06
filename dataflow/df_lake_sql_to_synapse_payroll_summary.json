@@ -1,12 +1,12 @@
 {
-	"name": "dataflow2",
+	"name": "df_lake_sql_to_synapse_payroll_summary",
 	"properties": {
 		"type": "MappingDataFlow",
 		"typeProperties": {
 			"sources": [
 				{
 					"dataset": {
-						"referenceName": "ds_sqldb_nycpayroll",
+						"referenceName": "ds_sql_payroll",
 						"type": "DatasetReference"
 					},
 					"name": "sqlnycpayroll"
@@ -22,7 +22,7 @@
 			"sinks": [
 				{
 					"dataset": {
-						"referenceName": "ds_sqldb_payroll_sumary",
+						"referenceName": "ds_synapse_payroll_summary",
 						"type": "DatasetReference"
 					},
 					"name": "sink1"
@@ -114,6 +114,7 @@
 				"     upsertable:false,",
 				"     truncate:true,",
 				"     format: 'table',",
+				"     staged: true,",
 				"     skipDuplicateMapInputs: true,",
 				"     skipDuplicateMapOutputs: true,",
 				"     errorHandlingOption: 'stopOnFirstError',",
