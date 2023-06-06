@@ -1,0 +1,12 @@
+{
+	"name": "ls_sql_database",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"connectionString": "integrated security=False;encrypt=True;connection timeout=30;data source=nycpayroll-server.database.windows.net;initial catalog=nycpayroll-sql-database;user id=hieuvt19",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQEQxNzM5NUM0LTg3QjItNDY2Mi1CN0Q5LTlCRjM0M0ZBN0U3OF9iNjRmZTQwMi1mODA0LTRlZjAtOThmMi01YjhmNTY3NmM4NWUiDQp9"
+		}
+	}
+}

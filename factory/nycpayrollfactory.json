@@ -1,0 +1,9 @@
+{
+	"name": "nycpayrollfactory",
+	"location": "southeastasia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "9b2ba543-3eaa-4e21-abcf-c97059799092",
+		"tenantId": "4cd2e619-09d8-4a7e-9046-625e912fb56e"
+	}
+}
